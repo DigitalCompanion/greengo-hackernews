@@ -1,0 +1,14 @@
+{
+  "@aws-cdk/core:enableStackNameDuplicates": "true",
+  "aws-cdk:enableDiffNoFail": "true",
+  "hosted-zone:account=987092829714:domainName=greengocloud.com:privateZone=false:region=us-west-2": {
+    "Id": "/hostedzone/Z3SOAGRSVKCEWP",
+    "Name": "greengocloud.com."
+  },
+  "availability-zones:account=987092829714:region=us-west-2": [
+    "us-west-2a",
+    "us-west-2b",
+    "us-west-2c",
+    "us-west-2d"
+  ]
+}

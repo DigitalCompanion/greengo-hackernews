@@ -9,17 +9,22 @@ setuptools.setup(
     name="cdk_hack",
     version="0.0.1",
 
-    description="An empty CDK Python app",
+    description="A Hacker News clone deployed with AWS CDK",
     long_description=long_description,
     long_description_content_type="text/markdown",
 
-    author="author",
+    author="Blake Green <bgreen@intervision.com>",
 
     package_dir={"": "cdk_hack"},
     packages=setuptools.find_packages(where="cdk_hack"),
 
     install_requires=[
         "aws-cdk.core",
+        "aws-cdk.aws-ecs-patterns",
+        "aws-cdk.aws-ecr-assets",
+        "aws-cdk.aws-certificatemanager",
+        "aws-cdk.aws-route53",
+        "aws-cdk.aws-ec2",
     ],
 
     python_requires=">=3.6",

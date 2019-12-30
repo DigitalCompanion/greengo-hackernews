@@ -1,0 +1,7 @@
+README.md
+setup.py
+cdk_hack/cdk_hack.egg-info/PKG-INFO
+cdk_hack/cdk_hack.egg-info/SOURCES.txt
+cdk_hack/cdk_hack.egg-info/dependency_links.txt
+cdk_hack/cdk_hack.egg-info/requires.txt
+cdk_hack/cdk_hack.egg-info/top_level.txt

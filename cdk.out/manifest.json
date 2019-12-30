@@ -1,0 +1,1576 @@
+{
+  "version": "1.16.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "cdk-hack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://987092829714/us-west-2",
+      "properties": {
+        "templateFile": "cdk-hack.template.json"
+      },
+      "metadata": {
+        "/cdk-hack": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.0b9723d54b7db3fbfc1a143398b02392e5fe080a68535480782a949b4372d0f0",
+              "id": "0b9723d54b7db3fbfc1a143398b02392e5fe080a68535480782a949b4372d0f0",
+              "packaging": "zip",
+              "sourceHash": "0b9723d54b7db3fbfc1a143398b02392e5fe080a68535480782a949b4372d0f0",
+              "s3BucketParameter": "AssetParameters0b9723d54b7db3fbfc1a143398b02392e5fe080a68535480782a949b4372d0f0S3Bucket0997A4A0",
+              "s3KeyParameter": "AssetParameters0b9723d54b7db3fbfc1a143398b02392e5fe080a68535480782a949b4372d0f0S3VersionKey83D9C166",
+              "artifactHashParameter": "AssetParameters0b9723d54b7db3fbfc1a143398b02392e5fe080a68535480782a949b4372d0f0ArtifactHashF8F836D1"
+            },
+            "trace": [
+              "Stack.addFileAsset (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/core/lib/stack.js:353:23)",
+              "new Asset (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:27:32)",
+              "AssetCode.bind (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-lambda/lib/code.js:135:26)",
+              "new Function (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-lambda/lib/function.js:67:33)",
+              "new DnsValidatedCertificate (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-certificatemanager/lib/dns-validated-certificate.js:26:35)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "id": "50db76a94c266f6e5d255b59b50712c0b7b6eab110333f2026da8e4b38d7ec55",
+              "packaging": "container-image",
+              "path": "asset.50db76a94c266f6e5d255b59b50712c0b7b6eab110333f2026da8e4b38d7ec55",
+              "sourceHash": "50db76a94c266f6e5d255b59b50712c0b7b6eab110333f2026da8e4b38d7ec55",
+              "imageNameParameter": "AssetParameters50db76a94c266f6e5d255b59b50712c0b7b6eab110333f2026da8e4b38d7ec55ImageName6AFE0FA8",
+              "repositoryName": "cdk/cdkhackwebservicetaskdefwebassetimage54c67f63"
+            },
+            "trace": [
+              "Stack.addDockerImageAsset (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/core/lib/stack.js:381:23)",
+              "new DockerImageAsset (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecr-assets/lib/image-asset.js:34:32)",
+              "AssetImage.bind (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/images/asset-image.js:20:23)",
+              "new ContainerDefinition (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/container-definition.js:76:40)",
+              "FargateTaskDefinition.addContainer (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.js:159:16)",
+              "new ApplicationLoadBalancedFargateService (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:36:51)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.a65ac4beaa2b5a7b20eebf3b7c5c1c886b71428afa377e02dab0d10ab3be57e7",
+              "id": "a65ac4beaa2b5a7b20eebf3b7c5c1c886b71428afa377e02dab0d10ab3be57e7",
+              "packaging": "zip",
+              "sourceHash": "a65ac4beaa2b5a7b20eebf3b7c5c1c886b71428afa377e02dab0d10ab3be57e7",
+              "s3BucketParameter": "AssetParametersa65ac4beaa2b5a7b20eebf3b7c5c1c886b71428afa377e02dab0d10ab3be57e7S3Bucket7CBBD48C",
+              "s3KeyParameter": "AssetParametersa65ac4beaa2b5a7b20eebf3b7c5c1c886b71428afa377e02dab0d10ab3be57e7S3VersionKey87E3D057",
+              "artifactHashParameter": "AssetParametersa65ac4beaa2b5a7b20eebf3b7c5c1c886b71428afa377e02dab0d10ab3be57e7ArtifactHash3E217B68"
+            },
+            "trace": [
+              "Stack.addFileAsset (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/core/lib/stack.js:353:23)",
+              "new Asset (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:27:32)",
+              "AssetCode.bind (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-lambda/lib/code.js:135:26)",
+              "new Function (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-lambda/lib/function.js:67:33)",
+              "SingletonFunction.ensureLambda (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:35:16)",
+              "new SingletonFunction (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:17:36)",
+              "new AdoptedRepository (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecr-assets/lib/adopted-repository.js:23:20)",
+              "new DockerImageAsset (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecr-assets/lib/image-asset.js:47:27)",
+              "AssetImage.bind (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/images/asset-image.js:20:23)",
+              "new ContainerDefinition (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/container-definition.js:76:40)",
+              "FargateTaskDefinition.addContainer (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.js:159:16)",
+              "new ApplicationLoadBalancedFargateService (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:36:51)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/VPC/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCB9E5F0B4",
+            "trace": [
+              "new Vpc (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:259:25)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/VPC/PublicSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCPublicSubnet1SubnetB4246D30",
+            "trace": [
+              "new Subnet (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:540:24)",
+              "new PublicSubnet (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:690:9)",
+              "/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:469:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:453:32)",
+              "Vpc.createSubnets (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:449:18)",
+              "new Vpc (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:279:14)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/VPC/PublicSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCPublicSubnet1RouteTableFEE4B781",
+            "trace": [
+              "new Subnet (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:555:23)",
+              "new PublicSubnet (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:690:9)",
+              "/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:469:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:453:32)",
+              "Vpc.createSubnets (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:449:18)",
+              "new Vpc (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:279:14)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/VPC/PublicSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCPublicSubnet1RouteTableAssociation0B0896DC",
+            "trace": [
+              "new Subnet (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:560:9)",
+              "new PublicSubnet (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:690:9)",
+              "/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:469:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:453:32)",
+              "Vpc.createSubnets (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:449:18)",
+              "new Vpc (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:279:14)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/VPC/PublicSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCPublicSubnet1DefaultRoute91CEF279",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:580:23)",
+              "/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:290:30",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:289:32)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/VPC/PublicSubnet1/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCPublicSubnet1EIP6AD938E8",
+            "trace": [
+              "PublicSubnet.addNatGateway (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:701:27)",
+              "NatGateway.configureNat (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/nat.js:52:33)",
+              "Vpc.createNatGateways (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:427:18)",
+              "new Vpc (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:295:22)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/VPC/PublicSubnet1/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCPublicSubnet1NATGatewayE0556630",
+            "trace": [
+              "PublicSubnet.addNatGateway (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:699:21)",
+              "NatGateway.configureNat (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/nat.js:52:33)",
+              "Vpc.createNatGateways (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:427:18)",
+              "new Vpc (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:295:22)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/VPC/PublicSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCPublicSubnet2Subnet74179F39",
+            "trace": [
+              "new Subnet (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:540:24)",
+              "new PublicSubnet (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:690:9)",
+              "/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:469:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:453:32)",
+              "Vpc.createSubnets (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:449:18)",
+              "new Vpc (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:279:14)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/VPC/PublicSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCPublicSubnet2RouteTable6F1A15F1",
+            "trace": [
+              "new Subnet (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:555:23)",
+              "new PublicSubnet (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:690:9)",
+              "/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:469:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:453:32)",
+              "Vpc.createSubnets (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:449:18)",
+              "new Vpc (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:279:14)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/VPC/PublicSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCPublicSubnet2RouteTableAssociation5A808732",
+            "trace": [
+              "new Subnet (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:560:9)",
+              "new PublicSubnet (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:690:9)",
+              "/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:469:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:453:32)",
+              "Vpc.createSubnets (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:449:18)",
+              "new Vpc (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:279:14)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/VPC/PublicSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCPublicSubnet2DefaultRouteB7481BBA",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:580:23)",
+              "/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:290:30",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:289:32)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/VPC/PublicSubnet2/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCPublicSubnet2EIP4947BC00",
+            "trace": [
+              "PublicSubnet.addNatGateway (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:701:27)",
+              "NatGateway.configureNat (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/nat.js:52:33)",
+              "Vpc.createNatGateways (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:427:18)",
+              "new Vpc (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:295:22)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/VPC/PublicSubnet2/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCPublicSubnet2NATGateway3C070193",
+            "trace": [
+              "PublicSubnet.addNatGateway (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:699:21)",
+              "NatGateway.configureNat (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/nat.js:52:33)",
+              "Vpc.createNatGateways (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:427:18)",
+              "new Vpc (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:295:22)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/VPC/PublicSubnet3/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCPublicSubnet3Subnet631C5E25",
+            "trace": [
+              "new Subnet (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:540:24)",
+              "new PublicSubnet (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:690:9)",
+              "/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:469:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:453:32)",
+              "Vpc.createSubnets (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:449:18)",
+              "new Vpc (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:279:14)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/VPC/PublicSubnet3/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCPublicSubnet3RouteTable98AE0E14",
+            "trace": [
+              "new Subnet (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:555:23)",
+              "new PublicSubnet (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:690:9)",
+              "/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:469:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:453:32)",
+              "Vpc.createSubnets (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:449:18)",
+              "new Vpc (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:279:14)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/VPC/PublicSubnet3/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCPublicSubnet3RouteTableAssociation427FE0C6",
+            "trace": [
+              "new Subnet (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:560:9)",
+              "new PublicSubnet (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:690:9)",
+              "/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:469:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:453:32)",
+              "Vpc.createSubnets (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:449:18)",
+              "new Vpc (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:279:14)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/VPC/PublicSubnet3/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCPublicSubnet3DefaultRouteA0D29D46",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:580:23)",
+              "/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:290:30",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:289:32)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/VPC/PublicSubnet3/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCPublicSubnet3EIPAD4BC883",
+            "trace": [
+              "PublicSubnet.addNatGateway (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:701:27)",
+              "NatGateway.configureNat (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/nat.js:52:33)",
+              "Vpc.createNatGateways (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:427:18)",
+              "new Vpc (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:295:22)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/VPC/PublicSubnet3/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCPublicSubnet3NATGatewayD3048F5C",
+            "trace": [
+              "PublicSubnet.addNatGateway (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:699:21)",
+              "NatGateway.configureNat (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/nat.js:52:33)",
+              "Vpc.createNatGateways (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:427:18)",
+              "new Vpc (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:295:22)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/VPC/PrivateSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCPrivateSubnet1Subnet8BCA10E0",
+            "trace": [
+              "new Subnet (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:540:24)",
+              "new PrivateSubnet (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:717:9)",
+              "/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:474:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:453:32)",
+              "Vpc.createSubnets (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:449:18)",
+              "new Vpc (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:279:14)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/VPC/PrivateSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCPrivateSubnet1RouteTableBE8A6027",
+            "trace": [
+              "new Subnet (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:555:23)",
+              "new PrivateSubnet (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:717:9)",
+              "/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:474:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:453:32)",
+              "Vpc.createSubnets (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:449:18)",
+              "new Vpc (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:279:14)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/VPC/PrivateSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCPrivateSubnet1RouteTableAssociation347902D1",
+            "trace": [
+              "new Subnet (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:560:9)",
+              "new PrivateSubnet (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:717:9)",
+              "/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:474:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:453:32)",
+              "Vpc.createSubnets (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:449:18)",
+              "new Vpc (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:279:14)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/VPC/PrivateSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCPrivateSubnet1DefaultRouteAE1D6490",
+            "trace": [
+              "PrivateSubnet.addRoute (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:621:23)",
+              "NatGateway.configureSubnet (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/nat.js:63:16)",
+              "NatGateway.configureNat (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/nat.js:57:18)",
+              "Vpc.createNatGateways (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:427:18)",
+              "new Vpc (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:295:22)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/VPC/PrivateSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCPrivateSubnet2SubnetCFCDAA7A",
+            "trace": [
+              "new Subnet (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:540:24)",
+              "new PrivateSubnet (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:717:9)",
+              "/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:474:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:453:32)",
+              "Vpc.createSubnets (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:449:18)",
+              "new Vpc (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:279:14)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/VPC/PrivateSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCPrivateSubnet2RouteTable0A19E10E",
+            "trace": [
+              "new Subnet (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:555:23)",
+              "new PrivateSubnet (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:717:9)",
+              "/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:474:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:453:32)",
+              "Vpc.createSubnets (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:449:18)",
+              "new Vpc (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:279:14)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/VPC/PrivateSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCPrivateSubnet2RouteTableAssociation0C73D413",
+            "trace": [
+              "new Subnet (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:560:9)",
+              "new PrivateSubnet (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:717:9)",
+              "/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:474:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:453:32)",
+              "Vpc.createSubnets (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:449:18)",
+              "new Vpc (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:279:14)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/VPC/PrivateSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCPrivateSubnet2DefaultRouteF4F5CFD2",
+            "trace": [
+              "PrivateSubnet.addRoute (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:621:23)",
+              "NatGateway.configureSubnet (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/nat.js:63:16)",
+              "NatGateway.configureNat (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/nat.js:57:18)",
+              "Vpc.createNatGateways (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:427:18)",
+              "new Vpc (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:295:22)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/VPC/PrivateSubnet3/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCPrivateSubnet3Subnet3EDCD457",
+            "trace": [
+              "new Subnet (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:540:24)",
+              "new PrivateSubnet (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:717:9)",
+              "/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:474:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:453:32)",
+              "Vpc.createSubnets (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:449:18)",
+              "new Vpc (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:279:14)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/VPC/PrivateSubnet3/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCPrivateSubnet3RouteTable192186F8",
+            "trace": [
+              "new Subnet (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:555:23)",
+              "new PrivateSubnet (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:717:9)",
+              "/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:474:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:453:32)",
+              "Vpc.createSubnets (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:449:18)",
+              "new Vpc (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:279:14)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/VPC/PrivateSubnet3/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCPrivateSubnet3RouteTableAssociationC28D144E",
+            "trace": [
+              "new Subnet (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:560:9)",
+              "new PrivateSubnet (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:717:9)",
+              "/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:474:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:453:32)",
+              "Vpc.createSubnets (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:449:18)",
+              "new Vpc (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:279:14)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/VPC/PrivateSubnet3/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCPrivateSubnet3DefaultRoute27F311AE",
+            "trace": [
+              "PrivateSubnet.addRoute (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:621:23)",
+              "NatGateway.configureSubnet (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/nat.js:63:16)",
+              "NatGateway.configureNat (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/nat.js:57:18)",
+              "Vpc.createNatGateways (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:427:18)",
+              "new Vpc (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:295:22)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/VPC/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCIGWB7E252D3",
+            "trace": [
+              "new Vpc (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:283:25)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/VPC/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VPCVPCGW99B986DC",
+            "trace": [
+              "new Vpc (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:285:25)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/Cluster/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ClusterEB0386A7",
+            "trace": [
+              "new Cluster (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/cluster.js:31:25)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/HackCertificate/CertificateRequestorFunction/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HackCertificateCertificateRequestorFunctionServiceRole37BD2671",
+            "trace": [
+              "new Role (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-iam/lib/role.js:35:22)",
+              "new Function (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-lambda/lib/function.js:59:35)",
+              "new DnsValidatedCertificate (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-certificatemanager/lib/dns-validated-certificate.js:26:35)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/HackCertificate/CertificateRequestorFunction/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HackCertificateCertificateRequestorFunctionServiceRoleDefaultPolicy9FFE4DBA",
+            "trace": [
+              "new Policy (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-iam/lib/policy.js:29:26)",
+              "Role.addToPolicy (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-iam/lib/role.js:153:34)",
+              "Function.addToRolePolicy (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-lambda/lib/function-base.js:37:19)",
+              "new DnsValidatedCertificate (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-certificatemanager/lib/dns-validated-certificate.js:33:27)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/HackCertificate/CertificateRequestorFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HackCertificateCertificateRequestorFunction746EFE2A",
+            "trace": [
+              "new Function (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-lambda/lib/function.js:69:26)",
+              "new DnsValidatedCertificate (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-certificatemanager/lib/dns-validated-certificate.js:26:35)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/HackCertificate/CertificateRequestorResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HackCertificateCertificateRequestorResource5DA2EE23",
+            "trace": [
+              "new CustomResource (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-cloudformation/lib/custom-resource.js:56:25)",
+              "new DnsValidatedCertificate (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-certificatemanager/lib/dns-validated-certificate.js:45:29)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/AssetParameters/0b9723d54b7db3fbfc1a143398b02392e5fe080a68535480782a949b4372d0f0/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters0b9723d54b7db3fbfc1a143398b02392e5fe080a68535480782a949b4372d0f0S3Bucket0997A4A0",
+            "trace": [
+              "new FileAssetParameters (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:11:36)",
+              "Stack.addFileAsset (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/core/lib/stack.js:343:22)",
+              "new Asset (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:27:32)",
+              "AssetCode.bind (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-lambda/lib/code.js:135:26)",
+              "new Function (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-lambda/lib/function.js:67:33)",
+              "new DnsValidatedCertificate (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-certificatemanager/lib/dns-validated-certificate.js:26:35)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/AssetParameters/0b9723d54b7db3fbfc1a143398b02392e5fe080a68535480782a949b4372d0f0/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters0b9723d54b7db3fbfc1a143398b02392e5fe080a68535480782a949b4372d0f0S3VersionKey83D9C166",
+            "trace": [
+              "new FileAssetParameters (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:15:35)",
+              "Stack.addFileAsset (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/core/lib/stack.js:343:22)",
+              "new Asset (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:27:32)",
+              "AssetCode.bind (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-lambda/lib/code.js:135:26)",
+              "new Function (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-lambda/lib/function.js:67:33)",
+              "new DnsValidatedCertificate (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-certificatemanager/lib/dns-validated-certificate.js:26:35)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/AssetParameters/0b9723d54b7db3fbfc1a143398b02392e5fe080a68535480782a949b4372d0f0/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters0b9723d54b7db3fbfc1a143398b02392e5fe080a68535480782a949b4372d0f0ArtifactHashF8F836D1",
+            "trace": [
+              "new FileAssetParameters (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:19:38)",
+              "Stack.addFileAsset (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/core/lib/stack.js:343:22)",
+              "new Asset (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:27:32)",
+              "AssetCode.bind (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-lambda/lib/code.js:135:26)",
+              "new Function (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-lambda/lib/function.js:67:33)",
+              "new DnsValidatedCertificate (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-certificatemanager/lib/dns-validated-certificate.js:26:35)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/AssetParameters/50db76a94c266f6e5d255b59b50712c0b7b6eab110333f2026da8e4b38d7ec55/ImageName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters50db76a94c266f6e5d255b59b50712c0b7b6eab110333f2026da8e4b38d7ec55ImageName6AFE0FA8",
+            "trace": [
+              "new DockerImageAssetParameters (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:29:35)",
+              "Stack.addDockerImageAsset (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/core/lib/stack.js:370:22)",
+              "new DockerImageAsset (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecr-assets/lib/image-asset.js:34:32)",
+              "AssetImage.bind (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/images/asset-image.js:20:23)",
+              "new ContainerDefinition (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/container-definition.js:76:40)",
+              "FargateTaskDefinition.addContainer (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.js:159:16)",
+              "new ApplicationLoadBalancedFargateService (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:36:51)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/AssetParameters/a65ac4beaa2b5a7b20eebf3b7c5c1c886b71428afa377e02dab0d10ab3be57e7/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersa65ac4beaa2b5a7b20eebf3b7c5c1c886b71428afa377e02dab0d10ab3be57e7S3Bucket7CBBD48C",
+            "trace": [
+              "new FileAssetParameters (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:11:36)",
+              "Stack.addFileAsset (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/core/lib/stack.js:343:22)",
+              "new Asset (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:27:32)",
+              "AssetCode.bind (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-lambda/lib/code.js:135:26)",
+              "new Function (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-lambda/lib/function.js:67:33)",
+              "SingletonFunction.ensureLambda (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:35:16)",
+              "new SingletonFunction (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:17:36)",
+              "new AdoptedRepository (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecr-assets/lib/adopted-repository.js:23:20)",
+              "new DockerImageAsset (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecr-assets/lib/image-asset.js:47:27)",
+              "AssetImage.bind (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/images/asset-image.js:20:23)",
+              "new ContainerDefinition (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/container-definition.js:76:40)",
+              "FargateTaskDefinition.addContainer (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.js:159:16)",
+              "new ApplicationLoadBalancedFargateService (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:36:51)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/AssetParameters/a65ac4beaa2b5a7b20eebf3b7c5c1c886b71428afa377e02dab0d10ab3be57e7/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersa65ac4beaa2b5a7b20eebf3b7c5c1c886b71428afa377e02dab0d10ab3be57e7S3VersionKey87E3D057",
+            "trace": [
+              "new FileAssetParameters (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:15:35)",
+              "Stack.addFileAsset (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/core/lib/stack.js:343:22)",
+              "new Asset (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:27:32)",
+              "AssetCode.bind (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-lambda/lib/code.js:135:26)",
+              "new Function (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-lambda/lib/function.js:67:33)",
+              "SingletonFunction.ensureLambda (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:35:16)",
+              "new SingletonFunction (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:17:36)",
+              "new AdoptedRepository (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecr-assets/lib/adopted-repository.js:23:20)",
+              "new DockerImageAsset (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecr-assets/lib/image-asset.js:47:27)",
+              "AssetImage.bind (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/images/asset-image.js:20:23)",
+              "new ContainerDefinition (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/container-definition.js:76:40)",
+              "FargateTaskDefinition.addContainer (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.js:159:16)",
+              "new ApplicationLoadBalancedFargateService (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:36:51)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/AssetParameters/a65ac4beaa2b5a7b20eebf3b7c5c1c886b71428afa377e02dab0d10ab3be57e7/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersa65ac4beaa2b5a7b20eebf3b7c5c1c886b71428afa377e02dab0d10ab3be57e7ArtifactHash3E217B68",
+            "trace": [
+              "new FileAssetParameters (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:19:38)",
+              "Stack.addFileAsset (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/core/lib/stack.js:343:22)",
+              "new Asset (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:27:32)",
+              "AssetCode.bind (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-lambda/lib/code.js:135:26)",
+              "new Function (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-lambda/lib/function.js:67:33)",
+              "SingletonFunction.ensureLambda (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:35:16)",
+              "new SingletonFunction (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:17:36)",
+              "new AdoptedRepository (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecr-assets/lib/adopted-repository.js:23:20)",
+              "new DockerImageAsset (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecr-assets/lib/image-asset.js:47:27)",
+              "AssetImage.bind (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/images/asset-image.js:20:23)",
+              "new ContainerDefinition (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/container-definition.js:76:40)",
+              "FargateTaskDefinition.addContainer (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.js:159:16)",
+              "new ApplicationLoadBalancedFargateService (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:36:51)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/Webservice/LB/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WebserviceLB68A51E9E",
+            "trace": [
+              "new BaseLoadBalancer (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-load-balancer.js:23:26)",
+              "new ApplicationLoadBalancer (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-load-balancer.js:16:9)",
+              "new ApplicationLoadBalancedServiceBase (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.js:31:85)",
+              "new ApplicationLoadBalancedFargateService (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:13:9)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/Webservice/LB/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WebserviceLBSecurityGroupA1EA7592",
+            "trace": [
+              "new SecurityGroup (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:131:30)",
+              "new ApplicationLoadBalancer (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-load-balancer.js:21:53)",
+              "new ApplicationLoadBalancedServiceBase (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.js:31:85)",
+              "new ApplicationLoadBalancedFargateService (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:13:9)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/Webservice/LB/SecurityGroup/to cdkhackWebserviceServiceSecurityGroup0F066601:8080": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WebserviceLBSecurityGrouptocdkhackWebserviceServiceSecurityGroup0F0666018080EC87195D",
+            "trace": [
+              "SecurityGroup.addEgressRule (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:43:13)",
+              "SecurityGroup.addEgressRule (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:199:19)",
+              "/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/connections.js:66:31",
+              "ReactiveList.forEachAndForever (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/connections.js:191:13)",
+              "/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/connections.js:65:51",
+              "ReactiveList.forEachAndForever (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/connections.js:191:13)",
+              "Connections.allowTo (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/connections.js:64:30)",
+              "Connections.allowFrom (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/connections.js:95:31)",
+              "ApplicationListener.registerConnectable (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.js:202:33)",
+              "ApplicationTargetGroup.registerConnectable (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.js:75:22)",
+              "Object.attachToApplicationTargetGroup (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/base/base-service.js:161:29)",
+              "FargateService.attachToApplicationTargetGroup (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/base/base-service.js:128:47)",
+              "ApplicationTargetGroup.addTarget (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.js:52:35)",
+              "ApplicationLoadBalancedFargateService.addServiceAsTarget (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.js:90:26)",
+              "new ApplicationLoadBalancedFargateService (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:62:14)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/Webservice/LB/PublicListener/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WebserviceLBPublicListener284B8AE7",
+            "trace": [
+              "new BaseListener (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-listener.js:12:26)",
+              "new ApplicationListener (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.js:23:9)",
+              "ApplicationLoadBalancer.addListener (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-load-balancer.js:64:16)",
+              "new ApplicationLoadBalancedServiceBase (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.js:39:43)",
+              "new ApplicationLoadBalancedFargateService (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:13:9)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/Webservice/LB/PublicListener/ECSGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WebserviceLBPublicListenerECSGroupB67F3549",
+            "trace": [
+              "new TargetGroupBase (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-target-group.js:31:25)",
+              "new ApplicationTargetGroup (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.js:15:9)",
+              "ApplicationListener.addTargets (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.js:132:23)",
+              "new ApplicationLoadBalancedServiceBase (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.js:44:42)",
+              "new ApplicationLoadBalancedFargateService (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:13:9)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/Webservice/DNS/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WebserviceDNSAE34C47D",
+            "trace": [
+              "new RecordSet (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-route53/lib/record-set.js:59:27)",
+              "new ARecord (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-route53/lib/record-set.js:85:9)",
+              "new ApplicationLoadBalancedServiceBase (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.js:67:28)",
+              "new ApplicationLoadBalancedFargateService (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:13:9)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/Webservice/LoadBalancerDNS": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WebserviceLoadBalancerDNS4CB5187C",
+            "trace": [
+              "new ApplicationLoadBalancedServiceBase (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.js:74:9)",
+              "new ApplicationLoadBalancedFargateService (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:13:9)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/Webservice/ServiceURL": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WebserviceServiceURL95BFD1F7",
+            "trace": [
+              "new ApplicationLoadBalancedServiceBase (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.js:75:9)",
+              "new ApplicationLoadBalancedFargateService (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:13:9)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/Webservice/TaskDef/TaskRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WebserviceTaskDefTaskRole2E65A9A5",
+            "trace": [
+              "new Role (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-iam/lib/role.js:35:22)",
+              "new TaskDefinition (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.js:63:43)",
+              "new FargateTaskDefinition (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/fargate/fargate-task-definition.js:18:9)",
+              "new ApplicationLoadBalancedFargateService (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:23:35)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/Webservice/TaskDef/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WebserviceTaskDef2851B25A",
+            "trace": [
+              "new TaskDefinition (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.js:66:25)",
+              "new FargateTaskDefinition (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/fargate/fargate-task-definition.js:18:9)",
+              "new ApplicationLoadBalancedFargateService (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:23:35)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/Webservice/TaskDef/web/AssetImage/AdoptRepository/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WebserviceTaskDefwebAssetImageAdoptRepository0BDBD309",
+            "trace": [
+              "new CustomResource (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-cloudformation/lib/custom-resource.js:56:25)",
+              "new AdoptedRepository (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecr-assets/lib/adopted-repository.js:41:25)",
+              "new DockerImageAsset (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecr-assets/lib/image-asset.js:47:27)",
+              "AssetImage.bind (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/images/asset-image.js:20:23)",
+              "new ContainerDefinition (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/container-definition.js:76:40)",
+              "FargateTaskDefinition.addContainer (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.js:159:16)",
+              "new ApplicationLoadBalancedFargateService (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:36:51)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/Webservice/TaskDef/web/LogGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WebserviceTaskDefwebLogGroup442EECEC",
+            "trace": [
+              "new LogGroup (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-logs/lib/log-group.js:182:26)",
+              "AwsLogDriver.bind (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/log-drivers/aws-log-driver.js:27:48)",
+              "new ContainerDefinition (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/container-definition.js:78:50)",
+              "FargateTaskDefinition.addContainer (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.js:159:16)",
+              "new ApplicationLoadBalancedFargateService (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:36:51)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/Webservice/TaskDef/ExecutionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WebserviceTaskDefExecutionRole97EDD24E",
+            "trace": [
+              "new Role (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-iam/lib/role.js:35:22)",
+              "FargateTaskDefinition.obtainExecutionRole (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.js:200:35)",
+              "AssetImage.bind (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/images/asset-image.js:25:71)",
+              "new ContainerDefinition (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/container-definition.js:76:40)",
+              "FargateTaskDefinition.addContainer (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.js:159:16)",
+              "new ApplicationLoadBalancedFargateService (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:36:51)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/Webservice/TaskDef/ExecutionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WebserviceTaskDefExecutionRoleDefaultPolicy82EAB551",
+            "trace": [
+              "new Policy (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-iam/lib/policy.js:29:26)",
+              "Role.addToPolicy (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-iam/lib/role.js:153:34)",
+              "Function.addToPrincipal (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-iam/lib/grant.js:54:65)",
+              "Function.addToPrincipalOrResource (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-iam/lib/grant.js:31:30)",
+              "AdoptedRepository.grant (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecr/lib/repository.js:116:26)",
+              "AdoptedRepository.grantPull (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecr/lib/repository.js:128:26)",
+              "AssetImage.bind (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/images/asset-image.js:25:26)",
+              "new ContainerDefinition (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/container-definition.js:76:40)",
+              "FargateTaskDefinition.addContainer (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.js:159:16)",
+              "new ApplicationLoadBalancedFargateService (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:36:51)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/Webservice/Service/Service": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WebserviceService8B6DCD76",
+            "trace": [
+              "new BaseService (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/base/base-service.js:98:25)",
+              "new FargateService (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/fargate/fargate-service.js:35:9)",
+              "new ApplicationLoadBalancedFargateService (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:49:24)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/Webservice/Service/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WebserviceServiceSecurityGroup3D0D1BEB",
+            "trace": [
+              "new SecurityGroup (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:131:30)",
+              "FargateService.configureAwsVpcNetworking (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/base/base-service.js:303:29)",
+              "new FargateService (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/fargate/fargate-service.js:40:14)",
+              "new ApplicationLoadBalancedFargateService (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:49:24)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/Webservice/Service/SecurityGroup/from cdkhackWebserviceLBSecurityGroupC8A4C1C8:8080": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WebserviceServiceSecurityGroupfromcdkhackWebserviceLBSecurityGroupC8A4C1C88080F98E39B6",
+            "trace": [
+              "SecurityGroup.addIngressRule (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:33:13)",
+              "SecurityGroup.addIngressRule (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:177:19)",
+              "/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/connections.js:89:31",
+              "ReactiveList.forEachAndForever (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/connections.js:191:13)",
+              "/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/connections.js:88:51",
+              "ReactiveList.forEachAndForever (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/connections.js:191:13)",
+              "Connections.allowFrom (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ec2/lib/connections.js:87:30)",
+              "ApplicationListener.registerConnectable (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.js:202:33)",
+              "ApplicationTargetGroup.registerConnectable (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.js:75:22)",
+              "Object.attachToApplicationTargetGroup (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/base/base-service.js:161:29)",
+              "FargateService.attachToApplicationTargetGroup (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/base/base-service.js:128:47)",
+              "ApplicationTargetGroup.addTarget (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.js:52:35)",
+              "ApplicationLoadBalancedFargateService.addServiceAsTarget (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs-patterns/lib/base/application-load-balanced-service-base.js:90:26)",
+              "new ApplicationLoadBalancedFargateService (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:62:14)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/AdoptEcrRepositorydbc60defc59544bcaa5c28c95d68f62c/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AdoptEcrRepositorydbc60defc59544bcaa5c28c95d68f62cServiceRoleD788AA17",
+            "trace": [
+              "new Role (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-iam/lib/role.js:35:22)",
+              "new Function (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-lambda/lib/function.js:59:35)",
+              "SingletonFunction.ensureLambda (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:35:16)",
+              "new SingletonFunction (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:17:36)",
+              "new AdoptedRepository (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecr-assets/lib/adopted-repository.js:23:20)",
+              "new DockerImageAsset (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecr-assets/lib/image-asset.js:47:27)",
+              "AssetImage.bind (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/images/asset-image.js:20:23)",
+              "new ContainerDefinition (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/container-definition.js:76:40)",
+              "FargateTaskDefinition.addContainer (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.js:159:16)",
+              "new ApplicationLoadBalancedFargateService (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:36:51)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/AdoptEcrRepositorydbc60defc59544bcaa5c28c95d68f62c/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AdoptEcrRepositorydbc60defc59544bcaa5c28c95d68f62cServiceRoleDefaultPolicy6BC8737C",
+            "trace": [
+              "new Policy (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-iam/lib/policy.js:29:26)",
+              "Role.addToPolicy (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-iam/lib/role.js:153:34)",
+              "SingletonFunction.addToRolePolicy (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-lambda/lib/function-base.js:37:19)",
+              "new AdoptedRepository (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecr-assets/lib/adopted-repository.js:31:12)",
+              "new DockerImageAsset (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecr-assets/lib/image-asset.js:47:27)",
+              "AssetImage.bind (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/images/asset-image.js:20:23)",
+              "new ContainerDefinition (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/container-definition.js:76:40)",
+              "FargateTaskDefinition.addContainer (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.js:159:16)",
+              "new ApplicationLoadBalancedFargateService (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:36:51)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/cdk-hack/AdoptEcrRepositorydbc60defc59544bcaa5c28c95d68f62c/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AdoptEcrRepositorydbc60defc59544bcaa5c28c95d68f62c52BE89E9",
+            "trace": [
+              "new Function (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-lambda/lib/function.js:69:26)",
+              "SingletonFunction.ensureLambda (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:35:16)",
+              "new SingletonFunction (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:17:36)",
+              "new AdoptedRepository (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecr-assets/lib/adopted-repository.js:23:20)",
+              "new DockerImageAsset (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecr-assets/lib/image-asset.js:47:27)",
+              "AssetImage.bind (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/images/asset-image.js:20:23)",
+              "new ContainerDefinition (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/container-definition.js:76:40)",
+              "FargateTaskDefinition.addContainer (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.js:159:16)",
+              "new ApplicationLoadBalancedFargateService (/private/var/folders/16/7rb331ps7h7crlf9sdd0_j7m0000gn/T/jsii-kernel-mkkFTd/node_modules/@aws-cdk/aws-ecs-patterns/lib/fargate/application-load-balanced-fargate-service.js:36:51)",
+              "/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49",
+              "Kernel._wrapSandboxCode (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate._onImmediate (/Users/blake/DevOps/aws-cdk/cdk-hack/.env/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "libraries": {
+      "@aws-cdk/cx-api": "1.19.0",
+      "@aws-cdk/core": "1.19.0",
+      "@aws-cdk/region-info": "1.19.0",
+      "@aws-cdk/aws-iam": "1.19.0",
+      "@aws-cdk/aws-cloudwatch": "1.19.0",
+      "@aws-cdk/aws-kms": "1.19.0",
+      "@aws-cdk/aws-ssm": "1.19.0",
+      "@aws-cdk/aws-ec2": "1.19.0",
+      "@aws-cdk/aws-autoscaling-common": "1.19.0",
+      "@aws-cdk/aws-applicationautoscaling": "1.19.0",
+      "@aws-cdk/aws-elasticloadbalancing": "1.19.0",
+      "@aws-cdk/aws-events": "1.19.0",
+      "@aws-cdk/aws-logs": "1.19.0",
+      "@aws-cdk/aws-s3": "1.19.0",
+      "@aws-cdk/assets": "1.19.0",
+      "@aws-cdk/aws-s3-assets": "1.19.0",
+      "@aws-cdk/aws-sqs": "1.19.0",
+      "@aws-cdk/aws-lambda": "1.19.0",
+      "@aws-cdk/aws-sns": "1.19.0",
+      "@aws-cdk/aws-cloudformation": "1.19.0",
+      "@aws-cdk/aws-route53": "1.19.0",
+      "@aws-cdk/aws-certificatemanager": "1.19.0",
+      "@aws-cdk/aws-elasticloadbalancingv2": "1.19.0",
+      "@aws-cdk/aws-autoscaling": "1.19.0",
+      "@aws-cdk/aws-sns-subscriptions": "1.19.0",
+      "@aws-cdk/aws-autoscaling-hooktargets": "1.19.0",
+      "@aws-cdk/aws-ecr": "1.19.0",
+      "@aws-cdk/aws-ecr-assets": "1.19.0",
+      "@aws-cdk/aws-apigateway": "1.19.0",
+      "@aws-cdk/aws-cloudfront": "1.19.0",
+      "@aws-cdk/aws-route53-targets": "1.19.0",
+      "@aws-cdk/aws-secretsmanager": "1.19.0",
+      "@aws-cdk/aws-servicediscovery": "1.19.0",
+      "@aws-cdk/aws-ecs": "1.19.0",
+      "@aws-cdk/aws-codecommit": "1.19.0",
+      "@aws-cdk/aws-codebuild": "1.19.0",
+      "@aws-cdk/aws-codepipeline": "1.19.0",
+      "@aws-cdk/aws-stepfunctions": "1.19.0",
+      "@aws-cdk/aws-events-targets": "1.19.0",
+      "@aws-cdk/aws-ecs-patterns": "1.19.0",
+      "jsii-runtime": "Python/3.7.3"
+    }
+  }
+}
