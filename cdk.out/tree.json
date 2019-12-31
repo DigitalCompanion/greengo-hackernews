@@ -1261,7 +1261,7 @@
                           ]
                         },
                         "family": "cdkhackWebserviceTaskDef38CD9DB0",
-                        "memory": "512",
+                        "memory": "514",
                         "networkMode": "awsvpc",
                         "requiresCompatibilities": [
                           "FARGATE"

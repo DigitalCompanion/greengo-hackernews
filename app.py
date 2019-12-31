@@ -6,6 +6,6 @@ from cdk_hack.cdk_hack_stack import CdkHackStack
 
 
 app = core.App()
-CdkHackStack(app, "cdk-hack", env=core.Environment(account="ENTERACCOUNTIDHERE", region="us-west-2"))
+CdkHackStack(app, "cdk-hack", env=core.Environment(account="987092829714", region="us-west-2"))
 
 app.synth()
